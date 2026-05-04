@@ -19,5 +19,15 @@
 -- where skill_id = 1;
 
 -- 6
-SELECT * from resources
-WHERE title ilike '%React%';
+-- SELECT * from resources
+-- WHERE title ilike '%React%';
+
+-- bonus
+-- SELECT themes.name as name_of_theme, count(resources.id) as number_of_theme FROM themes
+-- join resources on resources.theme_id = themes.id
+-- GROUP BY NAME;
+
+--  bonus 2
+SELECT title, url OF resources 
+join resources_skills on resources_skills.resource_id
+
